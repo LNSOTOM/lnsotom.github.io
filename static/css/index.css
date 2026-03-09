@@ -259,6 +259,70 @@ body {
   margin-top: 1.5rem;
 }
 
+.bio-homepage-hero {
+  min-height: 0;
+}
+
+.project-index-title {
+  max-width: 14ch;
+}
+
+.home-section {
+  margin-top: 2.5rem;
+}
+
+.project-list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 1.35rem;
+  background: #ffffff;
+}
+
+.project-list-card h3 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: 1.4rem;
+  line-height: 1.1;
+}
+
+.project-list-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.project-list-meta {
+  color: var(--brand-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-list-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-list-link:hover,
+.project-list-link:focus-visible {
+  color: var(--brand-dark);
+  text-decoration: underline;
+}
+
 .section-mini-label {
   margin: 0 0 0.45rem;
   color: var(--brand-dark);
@@ -880,6 +944,10 @@ body {
 @media (max-width: 900px) {
   .homepage-hero,
   .hero-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-list-grid {
     grid-template-columns: 1fr;
   }
 

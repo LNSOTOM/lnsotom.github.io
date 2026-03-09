@@ -32,7 +32,7 @@
     <nav class="navbar project-navbar" role="navigation" aria-label="main navigation">
       <div class="container is-max-desktop">
         <div class="navbar-brand">
-          <a class="navbar-item navbar-mark" href="#top">LNSOTOM</a>
+          <a class="navbar-item navbar-mark" href="bio/">LNSOTOM</a>
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="project-navbar-menu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -41,9 +41,11 @@
         </div>
         <div id="project-navbar-menu" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item" href="#research-home">Bio</a>
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="#project-page">Projects</a>
+              <a class="navbar-link" href="#project-page">
+                <span class="icon"><i class="fas fa-diagram-project"></i></span>
+                <span>Projects</span>
+              </a>
               <div class="navbar-dropdown is-right">
                 <a class="navbar-item" href="#project-page">HySpec Polar CNN</a>
                 <a class="navbar-item" href="#fvc-composition-tab">FVC Composition</a>
@@ -52,8 +54,14 @@
                 <a class="navbar-item" href="#qualitative-results">Calperum</a>
               </div>
             </div>
-            <a class="navbar-item" href="#bibtex">BibTeX</a>
-            <a class="navbar-item" href="static/pdfs/hyspec_arid_polar_ecosystemsCNN.pdf">PDF</a>
+            <a class="navbar-item" href="#bibtex">
+              <span class="icon"><i class="fas fa-quote-left"></i></span>
+              <span>BibTeX</span>
+            </a>
+            <a class="navbar-item" href="static/pdfs/hyspec_arid_polar_ecosystemsCNN.pdf">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span>
+              <span>PDF</span>
+            </a>
           </div>
         </div>
       </div>
@@ -66,13 +74,13 @@
       <div class="container is-max-desktop">
         <section class="homepage-hero">
           <div class="homepage-main">
-            <div class="project-kicker">Bio</div>
-            <h1 class="title homepage-name">Laura N. Sotomayor</h1>
-            <p class="homepage-role">Geospatial scientist working across remote sensing, ecology, and machine learning.</p>
+            <div class="project-kicker">Projects</div>
+            <h1 class="title homepage-name project-index-title">HySpec Arid Polar Ecosystems CNN</h1>
+            <p class="homepage-role">Hyperspectral remote sensing for ecosystem composition, structure, and function.</p>
             <div class="content homepage-intro">
               <p>
-                This page introduces a compact project on hyperspectral mapping for ecosystem
-                composition, structure, and function.
+                This project page focuses on compact results, resource links, and tabbed outputs
+                rather than repeating the broader bio content from the main landing page.
               </p>
             </div>
             <div class="research-link-row homepage-link-row">
@@ -80,20 +88,29 @@
                 <span class="icon"><i class="fas fa-arrow-down"></i></span>
                 <span>View Project</span>
               </a>
-              <a class="button is-light is-rounded action-button" href="static/pdfs/hyspec_arid_polar_ecosystemsCNN.pdf">
+              <a class="button is-light is-rounded resource-button" href="static/pdfs/hyspec_arid_polar_ecosystemsCNN.pdf">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>PDF</span>
+              </a>
+              <a class="button is-light is-rounded resource-button" href="https://github.com/LNSOTOM/lnsotomayor">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code</span>
               </a>
             </div>
           </div>
 
           <aside class="homepage-side">
             <div class="research-side-card research-interests-card">
-              <p class="hero-card-label">Research Interests</p>
+              <p class="hero-card-label">Project Scope</p>
+              <p>End-to-end project page with tabs for composition, structure, function, and qualitative comparisons.</p>
+            </div>
+            <div class="research-side-card">
+              <p class="hero-card-label">Analysis</p>
               <div class="research-follow-row">
-                <span class="follow-chip">Remote sensing</span>
-                <span class="follow-chip">Ecology</span>
-                <span class="follow-chip">Deep learning</span>
+                <span class="follow-chip">Composition</span>
+                <span class="follow-chip">Structure</span>
+                <span class="follow-chip">Function</span>
+                <span class="follow-chip">Generalisation</span>
               </div>
             </div>
           </aside>
@@ -116,6 +133,26 @@
             </div>
 
             <div class="column has-text-centered publication-links-wrap">
+              <div class="project-resource-links">
+                <span class="link-block">
+                  <a class="button is-light is-rounded resource-button" href="static/pdfs/hyspec_arid_polar_ecosystemsCNN.pdf">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>PDF</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a class="button is-light is-rounded resource-button" href="https://github.com/LNSOTOM/lnsotomayor">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a class="button is-light is-rounded resource-button" href="#qualitative-results">
+                    <span class="icon"><i class="fas fa-database"></i></span>
+                    <span>Data</span>
+                  </a>
+                </span>
+              </div>
               <div class="publication-links">
                 <span class="link-block">
                   <a class="button is-dark is-rounded action-button" href="static/pdfs/hyspec_arid_polar_ecosystemsCNN.pdf">
@@ -203,6 +240,20 @@
               <p class="eyebrow">Project</p>
               <h2 class="title is-2 tab-project-title">HySpec Arid Polar Ecosystems CNN</h2>
               <p class="tab-project-subtitle">Composition outputs and selected figures.</p>
+              <div class="tab-resource-links">
+                <a class="button is-light is-rounded resource-button" href="static/pdfs/hyspec_arid_polar_ecosystemsCNN.pdf">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>PDF</span>
+                </a>
+                <a class="button is-light is-rounded resource-button" href="https://github.com/LNSOTOM/lnsotomayor">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+                <a class="button is-light is-rounded resource-button" href="#qualitative-results">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span>Data</span>
+                </a>
+              </div>
             </div>
 
             <div class="section-header">
@@ -246,6 +297,20 @@
               <p class="eyebrow">Project</p>
               <h2 class="title is-2 tab-project-title">HySpec Arid Polar Ecosystems CNN</h2>
               <p class="tab-project-subtitle">Structure outputs and selected figures.</p>
+              <div class="tab-resource-links">
+                <a class="button is-light is-rounded resource-button" href="static/pdfs/hyspec_arid_polar_ecosystemsCNN.pdf">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>PDF</span>
+                </a>
+                <a class="button is-light is-rounded resource-button" href="https://github.com/LNSOTOM/lnsotomayor">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+                <a class="button is-light is-rounded resource-button" href="#qualitative-results">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span>Data</span>
+                </a>
+              </div>
             </div>
 
             <div class="section-header">
@@ -289,6 +354,20 @@
               <p class="eyebrow">Project</p>
               <h2 class="title is-2 tab-project-title">HySpec Arid Polar Ecosystems CNN</h2>
               <p class="tab-project-subtitle">Function outputs and selected figures.</p>
+              <div class="tab-resource-links">
+                <a class="button is-light is-rounded resource-button" href="static/pdfs/hyspec_arid_polar_ecosystemsCNN.pdf">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>PDF</span>
+                </a>
+                <a class="button is-light is-rounded resource-button" href="https://github.com/LNSOTOM/lnsotomayor">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+                <a class="button is-light is-rounded resource-button" href="#qualitative-results">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span>Data</span>
+                </a>
+              </div>
             </div>
 
             <div class="section-header">

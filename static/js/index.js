@@ -31,16 +31,24 @@ buttons.forEach((button) => {
   button.addEventListener('click', () => {
     const targetId = button.dataset.target;
     activateTab(targetId);
-    history.replaceState(null, '', `#${button.id}`);
+    history.replaceState(null, '', button.dataset.cleanUrl || `#${button.id}`);
   });
 });
 
-if (window.location.hash) {
-  const matchingButton = buttons.find((button) => `#${button.id}` === window.location.hash);
-  if (matchingButton) {
-    activateTab(matchingButton.dataset.target);
+function activateTabFromHash() {
+  if (window.location.hash) {
+    const matchingButton = buttons.find((button) => `#${button.id}` === window.location.hash);
+    if (matchingButton) {
+      activateTab(matchingButton.dataset.target);
+      if (matchingButton.dataset.cleanUrl) {
+        history.replaceState(null, '', matchingButton.dataset.cleanUrl);
+      }
+    }
   }
 }
+
+activateTabFromHash();
+window.addEventListener('hashchange', activateTabFromHash);
 
 const accentClassNames = ['accent-ice', 'accent-sand', 'accent-rock', 'accent-moss'];
 
